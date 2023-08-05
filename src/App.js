@@ -1,17 +1,22 @@
-import Header from './component/Header'
-import Home from './component/Home'
-import About from  './component/About'
-import Projects from './component/Projects'
-import Timeline from './component/Timeline'
+import React from "react";
+import Header from './component/Header';
+import About from  './component/About';
+import Projects from './component/Projects';
+import Timeline from './component/Timeline';
+import Footer from './component/Footer';
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="text-gray-400 bg-gray-900 body-font">
-      <Header/>
-      <About/>
-      <Projects />
-      <Timeline/>
-    </div>
+    <BrowserRouter>
+      <div className="text-gray-400 bg-gray-900">
+        <Header/>
+        <About/>
+        <Projects />
+        <Timeline/>
+        <Footer/>
+      </div>
+    </BrowserRouter>
   );
 }
 
